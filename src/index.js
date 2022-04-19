@@ -7,9 +7,7 @@ import Home from './Home';
 import Header from './Components/Header';
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Login from './Components/Login';
-import Event from './Components/Event';
-import Post from './Components/Post';
-import Createstudent from './Components/Createstudent';
+import Registration from './Components/registration';
 ReactDOM.render(
   <React.StrictMode>
   <Header/>
@@ -18,9 +16,7 @@ ReactDOM.render(
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/login" element={<Login></Login>}></Route>
-          <Route path="/event" element={<Event></Event>}></Route>
-          <Route path="/post" element={<Post></Post>}></Route>
-          <Route path="/add" element={<Createstudent></Createstudent>}></Route>
+          <Route path="/registration" element={<Registration></Registration>}></Route>
         </Routes>
       </BrowserRouter>
   </React.StrictMode>,
